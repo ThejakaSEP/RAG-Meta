@@ -23,7 +23,7 @@ questions = [
 pinecone.init(api_key="", environment="gcp-starter")
 index = pinecone.Index("vectordb1")
 
-chain = create_qa_chain(db_name='vectordb1', emb_model="text-embedding-ada-002", openai_api_key='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', with_meta_filteriing=False)
+chain = create_qa_chain(db_name='vectordb1', emb_model="text-embedding-ada-002", openai_api_key='', with_meta_filteriing=False)
 
 answer,source_docs = get_answer(chain,question=questions[0])
 

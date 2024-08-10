@@ -20,7 +20,7 @@ questions = [
 
 
 # Initiate index
-pinecone.init(api_key="0d2a8be4-2ec0-432d-9fb5-df5bb3290c8a", environment="gcp-starter")
+pinecone.init(api_key="", environment="gcp-starter")
 index = pinecone.Index("vectordb1")
 
 chain = create_qa_chain(db_name='vectordb1', emb_model="text-embedding-ada-002", openai_api_key='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', with_meta_filteriing=False)
